@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>INFINOVA '26 | You Are Invited</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: #031b14;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+
+    background:
+    linear-gradient(rgba(0,20,12,0.80),
+                    rgba(0,20,12,0.95)),
+    url("https://www.investopedia.com/thmb/7gfCixGE40_BlpBi2GqN1HTi51Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2174080781-508c0aae85a94ae6a7c4f9c303eae4f1.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    color: #d4af37;
+    letter-spacing: 5px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: clamp(40px, 9vw, 85px);
+    color: #d4af37;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+}
+
+.invite {
+    max-width: 650px;
+    line-height: 1.8;
+    font-size: 17px;
+    color: #e2e8e4;
+}
+
+button {
+    margin-top: 35px;
+    padding: 15px 35px;
+    background: transparent;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    font-size: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    background: #d4af37;
+    color: #031b14;
+}
+
+.details {
+    display: none;
+    margin-top: 35px;
+    padding: 30px;
+    border: 1px solid #d4af37;
+    max-width: 600px;
+    width: 100%;
+    animation: fadeIn 1.5s ease;
+}
+
+.details h2 {
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.details p {
+    margin: 12px;
+    line-height: 1.7;
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #8ba89b;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <div class="logo">
+        SWARNAJAYANTHI COLLEGE
+        <br>
+        SCIENCE SOCIETY
+    </div>
+
+    <h1>INFINOVA '26</h1>
+
+    <div class="subtitle">
+        YOU ARE INVITED
+    </div>
+
+    <div class="invite">
+        <p>
+        With great honor and pleasure, we invite you
+        to be a distinguished guest at our annual
+        Science Day celebration.
+        </p>
+
+        <br>
+
+        <p>
+        Join us as we explore the future of science,
+        innovation and sustainable technology
+        under the theme
+        </p>
+
+        <br>
+
+        <h2 style="color:#d4af37;">
+        RENEWABLE ENERGY
+        </h2>
+    </div>
+
+    <button onclick="openInvitation()">
+        OPEN INVITATION
+    </button>
+
+    <div class="details" id="details">
+
+        <h2>OFFICIAL INVITATION</h2>
+
+        <p>Dear Sir/Madam,</p>
+        
+      
+        <br>
+
+        <p>
+        The Science Society of Swarna Jayanthi College
+        cordially invites you to INFINOVA '26,
+        our Science Day celebration.
+        </p>
+
+        <p>
+        Experience an inspiring journey through
+        renewable energy, scientific discovery
+        and innovation.
+        </p>
+
+        <br>
+
+        <p>
+        <strong style="color:#d4af37;">DATE</strong>
+        <br>
+        26th November 2026
+        </p>
+
+        <p>
+        <strong style="color:#d4af37;">TIME</strong>
+        <br>
+         8.00 a.m. Onwards
+        </p>
+
+        <p>
+        <strong style="color:#d4af37;">VENUE</strong>
+        <br>
+        SwarnaJayanthi College<br>Kegalle
+        </p>
+
+        <br>
+
+        <p>
+        We would be deeply honored by your presence
+        at this special occasion.
+        </p>
+
+        <br>
+
+        <h2>WE LOOK FORWARD TO WELCOMING YOU</h2>
+
+        <p>
+        Science Society
+        <br>
+        SwarnaJayanthi College
+        </p>
+
+    </div>
+
+    <div class="footer">
+        INNOVATION • SUSTAINABILITY • THE FUTURE
+    </div>
+
+</section>
+
+<script>
+function openInvitation() {
+    const details = document.getElementById("details");
+
+    details.style.display = "block";
+
+    details.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+}
+</script>
+
+</body>
+</html>
